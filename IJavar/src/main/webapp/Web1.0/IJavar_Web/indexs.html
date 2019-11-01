@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="../bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css"/>
+<style type="text/css">
+	.container{
+		width: 1340px;
+	}
+	header{
+		background-color: black;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		color:white;
+		min-width: 1349px;
+	}
+	a,a:hover{
+		color:#fff3d0;
+	}
+	.li1{
+		margin-top:5px;
+		margin-left:60px; 
+	}
+	.s1{
+		font-size: 20px;
+	}
+	.s2{
+		color: #9f9f9f;
+	}
+	#select{
+		width:100%;
+		height:300px;
+		background-image: url("../imgs/dark60-bg-repeat.png");
+		background-size:100%;
+		opacity: 1; 
+		position: absolute; 
+		color: white;
+		z-index: 9999;
+		min-width: 1349px;
+	}
+	.nav{
+		width:130px;
+	}
+	.as{
+		color:white;
+	}
+	.select1{
+		float: left;
+	}
+	#index{
+		position: absolute;
+		top:500px;
+		width: 100%;
+		z-index: 999;
+	}
+	#foot{
+		background-color: rgb(25,28,37);
+		color:#9f9f9f;
+		margin-bottom: 0;
+		padding: 19px 0;
+		min-width: 1349px;
+	}
+</style>
+</head>
+<body>
+	<!-- 最上方横幅 -->
+	<header>
+	 <div class="container">
+		<div class="row" >
+			<div class="col-xs-2"><img alt="" src="../imgs/logo-public.png"></div>
+			<div class="col-xs-6" style="padding: 0"id="choose">
+				<ul class="list-inline text-center" >
+					<li class="li1" style="margin-left: -30px;"><span class="s1" >游戏资料</span><br><span class="s2">GAME INFO</span></li>
+					<li class="li1"><span class="s1">商城</span><br><span class="s2">STORE</span></li>
+					<li class="li1"><span class="s1">社区互动</span><br><span class="s2">COMMUNITY</span></li>
+					<li class="li1"><span class="s1">赛事官网</span><br><span class="s2">ESPORTS</span></li>
+					<li class="li1"><span class="s1">自助系统</span><br><span class="s2">SYSTEM</span></li>
+				</ul>
+			</div>
+			<div class="col-xs-4" >
+			<div class="row pull-right">
+				<div class="col-xs-2"><span class="fa fa-search" style="font-size: 50px;color:#fff3d0;cursor: pointer;"></span></div>
+				<div class="col-xs-2"><span class="fa fa-mobile" style="font-size: 60px;color:#fff3d0;cursor: pointer;"></span></div>
+				<div class="col-xs-8" style="padding-top: 10px;"><span class="fa fa-user-circle-o" style="font-size: 40px;color:#fff3d0;cursor: pointer;"></span>
+				<span style="font-size: 20px;">亲爱的用户,欢迎<a href="#">登录</a></span></div>
+			</div>
+			</div>
+		</div>
+	</div>
+	</header>
+	<!-- 选择栏 -->
+	<div id="select" hidden="">
+		<div class="container">
+			<div style="margin-left: 160px;">
+				<ul class="list-inline">
+					<li class="select1 text-center" >
+						<ul class="nav">
+							<li><a href="#" style="background: none;"class="as">游戏下载</a></li>
+							<li><a href="#" style="background: none;"class="as">新手指引</a></li>
+							<li><a href="#" style="background: none;"class="as">资料库</a></li>
+							<li><a href="#" style="background: none;"class="as">云顶之弈</a></li>
+							<li><a href="#" style="background: none;"class="as">攻略中心</a></li>
+							<li><a href="#" style="background: none;"class="as">开发者基地</a></li>
+							<li><a href="#" style="background: none;"class="as">海克斯战利品库</a></li>
+						</ul>
+					</li>
+					<li class="select1 text-center" style="margin-left: 5px;">
+						<ul class="nav">
+							<li><a href="#" style="background: none;"class="as">点券充值</a></li>
+							<li><a href="#" style="background: none;"class="as">道聚城</a></li>
+							<li><a href="#" style="background: none;"class="as">周边商城</a></li>
+							<li><a href="#" style="background: none;"class="as">LOL桌游</a></li>
+							<li><a href="#" style="background: none;"class="as">LOL信用卡</a></li>
+							<li><a href="#" style="background: none;"class="as">网吧特权</a></li>
+							<li><a href="#" style="background: none;"class="as">电竞小说</a></li>
+						</ul>
+					</li>
+					<li class="select1 text-center" >
+						<ul class="nav">
+							<li><a href="#" style="background: none;"class="as">官方社区</a></li>
+							<li><a href="#" style="background: none;"class="as">视频中心</a></li>
+							<li><a href="#" style="background: none;"class="as">官方论坛</a></li>
+							<li><a href="#" style="background: none;"class="as">官方微信</a></li>
+							<li><a href="#" style="background: none;"class="as">官方微博</a></li>
+							<li><a href="#" style="background: none;"class="as">玩家创作馆</a></li>
+							<li><a href="#" style="background: none;"class="as">玩家服务</a></li>
+						</ul>
+					</li>
+					<li class="select1 text-center" style="margin-left: 20px;">
+						<ul class="nav">
+							<li><a href="#" style="background: none;"class="as">LPL职业联赛</a></li>
+							<li><a href="#" style="background: none;"class="as">LDL发展联赛</a></li>
+							<li><a href="#" style="background: none;"class="as">季中冠军赛</a></li>
+							<li><a href="#" style="background: none;"class="as">洲际系列赛</a></li>
+							<li><a href="#" style="background: none;"class="as">全球总决赛</a></li>
+							<li><a href="#" style="background: none;"class="as">全明星赛</a></li>
+							<li><a href="#" style="background: none;"class="as">全国高校争霸赛</a></li>
+						</ul>
+					</li>
+					<li class="select1 text-center" style="margin-left: 15px;">
+						<ul class="nav">
+							<li><a href="#" style="background: none;"class="as">联系客服</a></li>
+							<li><a href="#" style="background: none;"class="as">转区系统</a></li>
+							<li><a href="#" style="background: none;"class="as">封号查询</a></li>
+							<li><a href="#" style="background: none;"class="as">体验服下载</a></li>
+							<li><a href="#" style="background: none;"class="as">信誉分系统</a></li>
+							<li><a href="#" style="background: none;"class="as">服务器状态查询</a></li>
+							<li><a href="#" style="background: none;"class="as">秩序殿堂</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 中间动画 -->
+	<div style="min-width: 1349px;">
+  		<video loop="loop" width="100%" src="../imgs/video.mp4" autoplay="autoplay" muted></video>
+	</div>
+	<!-- 进入首页 -->
+	<div id="index">
+		<div class="container text-center">
+		<a href="index.html"><img alt="" src="../imgs/spr.png"></a>
+		</div>
+	</div>
+	<!-- 底部 -->
+ 	<footer class="well" id="foot">
+ 		<div class="container" >
+ 			<div class="text-center">
+			<b>Copyright © 2019 IJava All Rights Reserved 甬ICP备23333333号-33 <a href="http://www.tmooc.cn" style="color:#9f9f9f">Java1907_IJava_Xin</a> 版权所有</b>
+			</div>
+ 		</div>
+ 	</footer>
+</body>
+<script type="text/javascript" src="../bootstrap3/jquery.min.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+	
+	/* 选择栏动画 */
+	$("#choose").mouseenter(function(){
+		$("#select").slideDown();
+	});
+	$("#select").mouseleave(function(){
+		$(this).slideUp();		
+	}); 
+	
+	/* 进入首页按钮动画 */
+	$("#index>div>a>img").mouseenter(function(){
+		var y=parseInt($("#index").css("top"));
+		y-=10;
+		$("#index").css("top",y+"px");
+	});
+	$("#index>div>a>img").mouseleave(function(){
+		var y=parseInt($("#index").css("top"));
+		y+=10;
+		$("#index").css("top",y+"px");
+	});
+</script>
+</html>

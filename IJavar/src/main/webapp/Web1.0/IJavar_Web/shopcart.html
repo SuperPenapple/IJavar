@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>shopcart</title>
+<meta name="viewport"
+  content="width=device-width,initial-scale=1,user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css"
+  href="../bootstrap3/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+  href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+<style type="text/css">
+.check {
+	width: 18px;
+	height: 18px;
+}
+
+.col-md-1, .col-md-2, .col-md-3 {
+	padding: 5px 5px;
+	height: 40px;
+	font-size: 20px;
+	margin: 5px 0;
+}
+</style>
+</head>
+<body>
+  <!-- 头 -->
+  <header class="well" style="margin-bottom: 0;height:68px;padding:5px 15px">
+    <div class="row">
+      <div class="col-md-8 col-sm-8 col-xs-8" style="height: 48px; padding: 10px 0">
+        <a href="index.html"
+          style="font-size: 20px; padding-left: 200px;"><span
+          class="glyphicon glyphicon-home"></span>首页</a>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-4">
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="register.html"
+            style="font-size: 20px;" class="text-center">注册</a></li>
+          <li role="presentation"><a href="login.html"
+            style="font-size: 20px;" class="text-center">登录</a></li>
+          <li role="presentation" class="active"><a
+            href="shopcart.html" style="font-size: 20px;"><span
+              class="glyphicon glyphicon-shopping-cart"></span>购物车</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- 导航+主题 -->
+  <div class="row" style="width:100%;background-image: url('imgs/KDA02.jpg'); background-size: 100%; background-repeat:repeat-y; padding: 0;margin:0">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <nav>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-6">
+            <ul class="nav nav-tabs">
+              <li role="presentation"><a href="list.html"
+                style="height: 60px; font-size: 30px">商品列表</a></li>
+              <li role="presentation"><a href="personal.html"
+                style="height: 60px; font-size: 30px">个人中心</a></li>
+              <li role="presentation" class="active"><a href="shopcart.html"
+                style="height: 60px; font-size: 30px">购物车</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-6" style="height: 60px">
+            <form class="form-inline"
+              style="margin-right: 60px; margin-top: 10px; width: 450px">
+              <div class="form-group">
+                <input type="text" class="form-control"
+                  placeholder="请输入需要的商品"
+                  style="width: 360px; height: 40px">
+              </div>
+              <button type="submit" class="btn btn-default"
+                style="height: 40px">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- 主题 -->
+      <!-- 第一行 -->
+      <div class="row"
+        style="background-color: white; width: 100%; height: 50px; margin: 0">
+        <div class="col-md-1 col-sm-1 col-xs-1">
+          <input id="all" type="checkbox" >全选
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3" style="padding-left: 45px">商品</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">单价</div>
+        <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left: 40px">数量</div>
+        <div class="col-md-2 col-sm-2 col-xs-2">金额</div>
+        <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left: 11px">操作</div>
+      </div>
+      <!-- 第二行 -->
+      <div style="height:900px;background-color: white">
+      <div class="row"
+        style="background-color: white; width: 100%; height: 300px; margin: 0">
+        <div class="col-md-1 col-sm-1 col-xs-1" style="height: 290px; padding-top: 100px">
+          <input class="check" type="checkbox">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3" style="height: 290px">
+          <img alt="" src="imgs/skin01.jpg">
+          <p class="text-center"
+            style="margin: 10px 0 10px; width: 121px">武神贾克斯</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 price" style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2" style="height: 290px; padding-top: 100px">
+          <div class="input-group" style="width: 110px">
+            <span class="input-group-btn">
+              <button  class="btn btn-default add" type="button">+</button>
+            </span> <input class="text-center count" type="text" value="1"
+              disabled="disabled" style="width: 50px"> <span
+              class="input-group-btn">
+              <button  class="btn btn-default sub" type="button">-</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 tprice"style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2" style="height: 290px; padding-top: 100px">
+          <button class="btn btn-default delete">删除</button>
+        </div>
+      </div>
+      <!-- 第三行 -->
+      <div class="row"
+        style="background-color: white; width: 100%; height: 300px; margin: 0">
+        <div class="col-md-1 col-sm-1 col-xs-1" style="height: 290px; padding-top: 100px">
+          <input class="check" type="checkbox">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3" style="height: 290px">
+          <img alt="" src="imgs/skin02.jpg">
+          <p class="text-center"
+            style="margin: 10px 0 10px; width: 121px">神拳李菁</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2" style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 290px; padding-top: 100px">
+          <div class="input-group" style="width: 110px">
+            <span class="input-group-btn">
+              <button  class="btn btn-default add" type="button">+</button>
+            </span> <input class="text-center count" type="text" value="1"
+              disabled="disabled" style="width: 50px"> <span
+              class="input-group-btn">
+              <button  class="btn btn-default sub" type="button">-</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 tprice"  style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 290px; padding-top: 100px">
+          <button class="btn btn-default delete">删除</button>
+        </div>
+      </div>
+      <!-- 第四行 -->
+      <div class="row"
+        style="background-color: white; width: 100%; height: 300px; margin: 0">
+        <div class="col-md-1 col-sm-1 col-xs-1"  style="height: 290px; padding-top: 100px">
+          <input class="check" type="checkbox">
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-3"  style="height: 290px">
+          <img alt="" src="imgs/skin06.jpg">
+          <p class="text-center"
+            style="margin: 10px 0 10px; width: 121px">黑夜传说亚索</p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 290px; padding-top: 100px">
+          <div class="input-group" style="width: 110px">
+           <span class="input-group-btn">
+              <button  class="btn btn-default add" type="button">+</button>
+            </span> <input class="text-center count" type="text" value="1"
+              disabled="disabled" style="width: 50px"> <span
+              class="input-group-btn">
+              <button  class="btn btn-default sub" type="button">-</button>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2 tprice"  style="height: 290px; padding-top: 100px">99.0</div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 290px; padding-top: 100px">
+          <button class="btn btn-default delete">删除</button>
+        </div>
+      </div>
+      </div>
+      <!-- 最后一行 -->
+      <div class="row"
+        style="background-color: #EBEBE4; width: 100%; height: 70px; margin: 0">
+        <div id="num" class="col-md-2 col-sm-2 col-xs-2"  style="height: 50px; padding-top: 20px">
+          已选x件
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height:50px;padding-top:20px">
+          <button class="text-center btn btn-primary delall" 
+            >批量删除</button>
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-5" style="height: 50px; padding-top: 20px"></div>
+       
+        <div class="col-md-2 col-sm-2 col-xs-2"  style="height: 50px; padding-top: 20px">
+          <p>
+            应付:
+            <span style="color:red;font-size:24px;font-weight:bold" id="total">￥X</span>
+          </p>
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-1" style="height: 70px; padding:0;margin:0">
+          <button class="btn" style="height:70px;width:100%;background-color:rgb(255,69,0)"><h3>结算</h3></button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 col-sm-1 col-xs-1" ></div>
+  </div>
+
+  <!-- 
+  <footer class="well"
+    style="background-color: grey; height:70px">
+    <div class="container">
+      <div class="text-center" style="font-size: 20px;">Copyright
+        © 2019 IJavar All Rights Reserved</div>
+    </div>
+  </footer> -->
+</body>
+<script type="text/javascript" src="../bootstrap3/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/holder.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/html5shiv.min.js"></script>
+<script type="text/javascript"
+  src="../bootstrap3/js/css3-mediaqueries.js"></script>
+<script type="text/javascript" src="../bootstrap3/js/respond.min.js"></script>
+<script type="text/javascript">
+	
+	$("#num").text("已选0件");
+	$(".check").click(function(){
+		var num=0;
+		$(".check").each(function(){
+			if(this.checked){
+				num++;
+			}
+		})
+		$("#num").text("已选"+num+"件");
+	})
+	
+	
+	$("#all").click(function(){
+		var state=$(this).attr("checked");
+		console.log(state);
+		$(".check").attr("checked",state);
+		var num=0;
+		$(".check").each(function(){
+			if(this.checked){
+				num++;
+			}
+		})
+		$("#num").text("已选"+num+"件");
+	});
+	var count=0;
+	var total=0;
+	//小金额
+	var tprice=0;
+	$("#total").text("￥297");
+	$(".add").click(function(){
+		count=parseInt($(this).parent().next().val())+1;
+		total=parseInt($(this).parent().parent().parent().prev().text())*count;
+		console.log(count);
+		console.log(total);
+		$(this).parent().next().attr("value",count);
+		$(this).parent().parent().parent().next().text(total);
+		tprice=0;
+		$(".tprice").each(function(){
+			tprice+=parseInt($(this).text());
+		})
+		$("#total").text("￥"+tprice);
+	});
+	
+	$(".sub").click(function(){
+		 count=parseInt($(this).parent().prev().val())-1;
+		 total=parseInt($(this).parent().parent().parent().prev().text())*count;
+		console.log(count);
+		$(this).parent().parent().parent().next().text(total);
+		if(count>=0){
+			$(this).parent().prev().attr("value",count);
+		}else{
+			$(this).parent().prev().attr("value",0);
+		}
+		tprice=0;
+		$(".tprice").each(function(){
+			tprice+=parseInt($(this).text());
+		})
+		$("#total").text("￥"+tprice);
+	});
+	
+	var delprice=0;
+	$(".delete").click(function(){
+		$(this).parent().parent().remove();
+		tprice=0;
+		$(".tprice").each(function(){
+			tprice+=parseInt($(this).text());
+		})
+		$("#total").text("￥"+tprice);
+	});
+	
+	$(".delall").click(function(){
+		$(".delete").parent().parent().remove();
+		$("#total").text("￥0");
+	});
+	
+	
+	
+	
+		
+	
+</script>
+</html>
